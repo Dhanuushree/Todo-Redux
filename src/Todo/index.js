@@ -1,0 +1,22 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Form from './Form';
+import TodoList from './TodoList';
+
+const useStyles = makeStyles({
+    root: {
+        textAlign: "center",
+        height: "100%"
+    }
+});
+function Todo() {
+    const classes = useStyles();
+    return (
+        <div className={classes.root}>
+            <Form />
+            <TodoList />
+        </div>
+    )
+
+}
+export default Todo;
